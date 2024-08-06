@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC</title>
+</head>
+
+<body>
+
+    <h1>Einkaufsliste</h1>
+
+
+
+    <script>
+        let name = prompt('Bitte Name eingeben');
+        console.log('Hallo ' + name);
+
+        if (confirm('Musst du einkaufen?')) {
+
+            console.log('OK!');
+
+        } else {
+            console.log('Dann brauchst du diese App nicht!');
+
+        }
+    </script>
+
+
+
+
+
+
+
+    <ul id="myTodos"></ul>
+
+    <input type="text" id="todoField">
+    <button onclick="addTodo()">Hinzufügen</button>
+    <script>
+        function addTodo() {
+            myTodos.innerHTML += `
+
+<li>${todoField.value}</li>
+`;
+
+        }
+    </script>
+
+</body>
+
+</html>
